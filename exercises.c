@@ -12,6 +12,7 @@ y en c almacena el valor de la suma de a más b.
 */
 
 void suma(int a, int b, int * c) {
+   printf("\n%i  %i\n", a, b);
    *c = a + b;
 }
 
@@ -79,7 +80,8 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-   return NULL;
+   Vector* v = (Vector *) calloc( n , sizeof(Vector));
+   return v;
 }
 
 /*
