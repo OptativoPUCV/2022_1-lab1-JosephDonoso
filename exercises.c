@@ -19,13 +19,14 @@ void suma(int a, int b, int * c) {
 Esta función suma los N primeros números del arreglo a
 */
 int sumaN(int a[], int N) {
-    int total = 0;
+    int i;
+    int tot = 0;
 
-    for(int i = 0; i < N; i++) {
-      total += a[i];
+    for(i = 0; i < N; i++) {
+      tot += a[i];
     }
 
-    return total;
+    return tot;
 }
 
 /*
