@@ -12,7 +12,6 @@ y en c almacena el valor de la suma de a más b.
 */
 
 void suma(int a, int b, int * c) {
-   printf("\n%i  %i\n", a, b);
    *c = a + b;
 }
 
@@ -80,7 +79,9 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-   Vector* v = (Vector *) calloc( n , sizeof(Vector));
+   Vector* v = (Vector *) malloc( sizeof(Vector) );
+   v->capacidad = n;
+   v->datos = (int*) calloc( n, sizeof( Vector ) );
    return v;
 }
 
@@ -90,7 +91,7 @@ Programe la función void asignarValor(Vector * v, int i, int valor),
 la cual asigna el valor a la posición i del vector v.
 */
 void asignarValor(Vector * v, int i, int valor) {
-
+   v[i].datos = valor;
 }
 
 /*
@@ -99,7 +100,7 @@ Programe la función int obtenerValor(Vector * v, int i),
 la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i) {
-   return 0;
+   return v[i].datos;
 }
 
 /*
@@ -108,7 +109,12 @@ Función que suma los vectores `a` y `b` y
 actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
+   
+   int largo = a->capacidad;
 
+   for (int i = 0; i < largo; i++){
+      c->datos[i] = a->datos[i] + b->datos[i];
+   }
 }
 
 /*
