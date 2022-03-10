@@ -109,7 +109,7 @@ Función que suma los vectores `a` y `b` y
 actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
-   
+
    int largo = a->capacidad;
 
    for (int i = 0; i < largo; i++){
@@ -124,4 +124,13 @@ sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 */
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
 
+   Vector* a = crearVector( 2 );
+   asignarValor( a, 0, a1);
+   asignarValor( a, 0, a2);
+
+   Vector* b = crearVector( 2 );
+   asignarValor( b, 0, b1);
+   asignarValor( b, 0, b2);
+
+   sumaV( a, b, c );
 }

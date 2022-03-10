@@ -59,3 +59,9 @@ ju., 10 de mar. de 2022 19:58:33:
 ./test.sh: line 26: gcc: command not found
 Compilation failed
 baee987
+ju., 10 de mar. de 2022 20:06:56: 
+ exercises.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+./test.sh: line 26: gcc: command not found
+Compilation failed
+dfcb7b1
