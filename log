@@ -77,3 +77,7 @@ ju., 10 de mar. de 2022 23:46:38:
 ./test.sh: line 26: gcc: command not found
 Compilation failed
 7cb3305
+vi., 11 de mar. de 2022 11:37:52: 
+./test.sh: line 26: gcc: command not found
+Compilation failed
+acbcffc
