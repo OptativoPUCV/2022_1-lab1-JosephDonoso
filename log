@@ -85,3 +85,9 @@ vi., 11 de mar. de 2022 12:11:49:
  tests:  8|0
 total_score: 70/70
 f831ec1
+vi., 11 de mar. de 2022 13:01:00: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  8|0
+total_score: 70/70
+915f987
