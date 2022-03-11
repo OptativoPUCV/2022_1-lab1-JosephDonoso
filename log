@@ -81,3 +81,7 @@ vi., 11 de mar. de 2022 11:37:52:
 ./test.sh: line 26: gcc: command not found
 Compilation failed
 acbcffc
+vi., 11 de mar. de 2022 12:11:49: 
+ tests:  8|0
+total_score: 70/70
+f831ec1
